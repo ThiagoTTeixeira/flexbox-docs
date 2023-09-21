@@ -1,0 +1,38 @@
+/* (Mini) reset do Css do navegador para evitar conflito de estilos entre navegadores */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: initial;
+    font-weight: 400;
+    text-align: initial;
+} */
+
+.container{
+    height: 310px;
+    background-color: antiquewhite;
+    border: 5px solid #fc0202;
+    display: flex;
+}
+
+.contido{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 5px solid #0000ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table, th, td{
+    border: 1px solid;
+}
+
+th{
+    text-align: center;
+}
+
+table{
+    width: 50;
+}
