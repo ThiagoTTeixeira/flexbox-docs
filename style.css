@@ -47,7 +47,7 @@ table{
 
 }
 
-.mini-contido{
+.mini-container div {
     width: 50px;
     height: 50px;
     background-color: aqua;
@@ -58,7 +58,7 @@ table{
     border-radius: 10px;
 }
 
-.mini-contido:hover{
+.mini-container div:hover{
     width: 60px;
     height: 60px;
     background-color: purple;
@@ -133,12 +133,23 @@ table{
 
 #ac-SB{
     align-content: space-between;
+    height: 165px;
+    flex-direction: row;
 }
 
 #ac-SA{
-   align-content: space-around;
+    align-content: space-around;
+    height: 165px;
+    flex-direction: row;
 }
 
 #ac-SE{
     align-content: space-evenly;
+    height: 165px;
+    flex-direction: row;
+}
+
+#ac-mg div{
+    /* margin: 2px 15px; */
+    
 }
