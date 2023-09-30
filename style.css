@@ -37,9 +37,19 @@ body{
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    pad
 }    
 
+.mae{
+    display: flex;
+    justify-content: center;
+    width: min-content;
+    gap: 20px;
+    padding: 10px;
+    text-align: center;
+    /* position: relative; */
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .exemplos{
     display: flex;
@@ -48,14 +58,12 @@ body{
 }
 
 details{
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .textos-div{
     display: flex;
     flex-flow: row wrap;
-    
-
 }
 
 .mini-container div {
@@ -120,11 +128,17 @@ details{
     height: auto;
 }
 
+#ai-BL div{
+    width: 80px;
+}
+
 #ai-ST{
     align-items: stretch;
 }
+
 #ai-BL{
     align-items: baseline;
+    height: 200px;
 }
 
 #fw-W{
@@ -138,10 +152,6 @@ details{
 #fw-WR{
     flex-wrap: wrap-reverse;
     height: 130px;
-}
-
-#flex-flow{
-
 }
 
 #ff{
@@ -173,9 +183,4 @@ details{
     align-content: space-evenly;
     height: 165px;
     flex-direction: row;
-}
-
-#ac-mg div{
-    /* margin: 2px 15px; */
-    
 }

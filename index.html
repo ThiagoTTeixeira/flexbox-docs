@@ -15,6 +15,9 @@
         A primeira propriedade que precisar ser declarada para que o Flexbox funcione!
     </p>
     <p class="descricao-propriedade">Algumas propriedades como flex-direction, justify-content e align-content já vem com os valores padrão.</p>
+    <br><h3>BREVE EXPLICAÇÃO</h3>
+    <p class="descricao-propriedade">O display flex nos da a possibilidade de estilizar e movimentar os elementos na tela mais facilmente. Antes de comçarmos, vale lebrar que o curso normal do flex em linha começa da esquerda para a direita, e em coluna de cima para baixo</p>
+
 
     <!-- table>(tr>th.propriedade+th.valor)tr*3>td.propriedade+td.valor -->
 
@@ -56,309 +59,420 @@
         </tr>
     </table>
     <details id="justify-content">
-        <summary>justify-content</summary>
-        <div class="exemplos">
-            <article>
-                <p>CENTER</p>
-            </article>
-            <article>
-                <p>FLEX-START</p>
-            </article>
-            <article>
-                <p>FLEX-END</p>
-            </article>
+        <summary><h3>justify-content</h3></summary>
+        <p>justify-content serve para alinhar o conteudo horizontalmente na página.</p>
+        <div class="mae">   
+            <div>    
+                <div class="exemplos">
+                    <article>
+                        <p>CENTER</p>
+                        <p>center alinha os elementos ao centro no eixo x</p>
+                    </article>
+                    <div class="mini-container">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>    
+            </div>
+            <div>
+                <div class="exemplos">    
+                    <article>
+                        <p>FLEX-START</p>
+                        <p>Esse coloca os elementos aonde começa o flex horizontal</p>
+                    </article>
+                    <div class="mini-container" id="jc-fs">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>  
+                </div>          
+            </div>
+            <div>
+                <div class="exemplos">    
+                    <article>
+                        <p>FLEX-END</p>
+                        <p>Esse coloca os elementos aonde começa o flex horizontal</p>
+                    </article>
+                    <div class="mini-container" id="jc-fe">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="exemplos">            
-            <div class="mini-container">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+        <div class="mae">
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>SPACE-BETWEEN</p>
+                        <p>Esse alinha o 1° e o ulimo elemento as suas bordas mais proximas, e da um espaçameno por igual entre os elementos</p>
+                    </article>
+                    <div class="mini-container" id="jc-sb">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
             </div>
-            <div class="mini-container" id="jc-fs">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>SPACE-AROUND</p>
+                        <p>space-around colocar margens em cada elemento, por exemplo cada cano de cada elemento tera 5px, assim para as bordas terão só 5 px de distancias, porem entre os elementos terão 10px</p>
+                    </article>
+                    <div class="mini-container" id="jc-sa">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
             </div>
-            <div class="mini-container" id="jc-fe">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-            </div>
-        </div>
-        <div class="exemplos">
-                <article>
-                    <p>SPACE-BETWEEN</p>
-                </article>
-                <article>
-                    <p>SPACE-AROUND</p>
-                </article>
-                <article>
-                    <p>SPACE-EVENLY</p>
-                </article>
-        </div>
-        <div class="exemplos">
-            <div class="mini-container" id="jc-sb">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-            </div>
-            <div class="mini-container" id="jc-sa">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-            </div>
-            <div class="mini-container" id="jc-se">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+            <div>
+                <div class="exemlos">
+                    <article>
+                        <p>SPACE-EVENLY</p>
+                        <p>space-evenly da o mesmo valor de espaçamento para todos os elementos, 5px de distancia das bordas, e 5px de elemento para elemento</p>
+                    </article>
+                    <div class="mini-container" id="jc-se">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
             </div>
         </div>
     </details>
     <details id="flex-direction">
-        <summary>flex-direction</summary>
-        <div class="exemplos">
-            <article>
-                <p>ROW</p>
-            </article>
-            <article>
-                <p>COLUMN</p>
-            </article>
-        </div>
-        <div class="exemplos">            
-            <div class="mini-container" id="fd-row">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+        <summary><h3>flex-direction</h3></summary>
+        <p>flex-direction define em qual direção os elementos vão seguir.</p>
+        <div class="mae">
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>ROW</p>
+                        <p>Faz os elementos seguirem em linha, do começo para o fim do flex.</p>
+                    </article>
+                    <div class="mini-container" id="fd-row">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
             </div>
-            <div class="mini-container" id="fd-column">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-            </div>
-        </div>
-        <div class="exemplos">
-                <article>
-                    <p>ROW-REVERSE</p>
-                </article>
-                <article>
-                    <p>COLUMN-REVERSE</p>
-                </article>
-        </div>
-        <div class="exemplos">
-            <div class="mini-container" id="fd-row-r">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-            </div>
-            <div class="mini-container" id="fd-column-r">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+            <div>
+                <div class="exemplo">
+                    <article>
+                        <p>COLUMN</p>
+                        <p>Faz os elementos seguirem em coluna, do começo para o fim do flex.</p>
+                    </article>
+                    <div class="mini-container" id="fd-column">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
             </div>
         </div>
-       
+        <div class="mae">            
+            <div>
+                <div class="exemplo">
+                    <article>
+                        <p>ROW-REVERSE</p>
+                        <p>O "reverse" no nome significa que inverteu aode o flex começa(neste caso, agora o inicio do flex é na direita.) Faz os elementos seguirem em linha, do começo para o fim do flex.</p>
+                    </article>
+                    <div class="mini-container" id="fd-row-r">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="exemplo">
+                    <article>
+                        <p>COLUMN-REVERSE</p>
+                        <p>O "reverse" no nome significa que inverteu aode o flex começa(neste caso, agora o inicio do flex é em cima.) Faz os elementos seguirem em linha, do começo para o fim do flex.</p>
+                    </article>
+                    <div class="mini-container" id="fd-column-r">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </details>
     <details id="align-items">
-        <summary>align-items</summary>
-        <div class="exemplos">
-            <article>
-                <p>CENTER</p>
-            </article>
-            <article>
-                <p>FLEX-START</p>
-            </article>
-            <article>
-                <p>FLEX-END</p>
-            </article>
-        </div>
-        <div class="exemplos">            
-            <div class="mini-container" >
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+        <summary><h3>align-items</h3></summary>
+        <p>Este movimenta os elementos verticalmente(no eixo y)</p>
+        <div class="mae">
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>CENTER</p>
+                        <p>Elementos no centro vertical</p>
+                    </article>
+                    <div class="mini-container" >
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
             </div>
-            <div class="mini-container" id="ai-FS">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+            <div>
+                <div class="exeplos">
+                    <article>
+                        <p>FLEX-START</p>
+                        <p>Elementos aonde o flex começa, caso não tenha alteração em cima.</p>
+                    </article>
+                    <div class="mini-container" id="ai-FS">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
             </div>
-            <div class="mini-container" id="ai-FE">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>FLEX-END</p>
+                        <p>Elementos aonde o flex termina, caso não tenha alteração em baixo.</p>
+                    </article>
+                    <div class="mini-container" id="ai-FE">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="exemplos">
-            <article>
-                <p>STRETCH</p>
-            </article>
-            <article>
-                <p>BASELINE</p>
-            </article>
-        </div>
-        <div class="exemplos">            
-            <div class="mini-container" id="ai-ST">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+        </div>    
+        <div class="mae">
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>STRETCH</p>
+                        <p>Elementos se esticam para cobrir toda a area selecionada</p>
+                    </article>
+                    <div class="mini-container" id="ai-ST">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
             </div>
-            <div class="mini-container" id="ai-BL">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>BASELINE</p>
+                        Elementos se alinham conforme a sua linha de base(?).
+                    </article>
+                    <div class="mini-container" id="ai-BL">
+                        <div>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, possimus!</div>
+                        <div>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                        <div>3 Lorem ipsum dolor sit amet.</div>
+                    </div>
+                </div>
             </div>
-            
         </div>
     </details>
     <details id="flex-wrap">
-        <summary>flex-wrap</summary>
-        <div class="exemplos">
-            <article>
-                <p>WRAP</p>
-            </article>
-            <article>
-                <p>NOWRAP</p>
-            </article>
-            <article>
-                <p>WRAP-REVERSE</p>
-            </article>
+        <summary><h3>flex-wrap</h3></summary>
+        <p>Este determina se os elementos vão se movimentar para caber na tela, ou se eles vão simplesmente diminuir de tamanho(se esprenedo)</p>
+        <div class="mae">
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>NOWRAP</p>
+                        <p>Neste caso como definimos o wrap como falso, os elementos estão se espremendo para caber na tela</p>
+                    </article>
+                    <div class="mini-container" id="fw-NW">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>WRAP</p>
+                        <p>Aqui vemos como o wrap funciona, reposicionando os elementos conforme a necessidade</p>
+                    </article>
+                    <div class="mini-container" id="fw-W">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>WRAP-REVERSE</p>
+                        <p>Aqui vemos que os elementos se adaptaram, porém a propriedade reverse indica que ele foi invertido, confira os numeros da caixa</p>
+                    </article>
+                    <div class="mini-container" id="fw-WR">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="exemplos">            
-            <div class="mini-container" id="fw-W">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>10</div>
-            </div>
-            <div class="mini-container" id="fw-NW">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>10</div>
-            </div>
-            <div class="mini-container" id="fw-WR">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>10</div>
-            </div>
     </details>
     <details id="flex-flow">
-        <summary>flex-flow</summary>
-        <div class="exemplos">
-            <article>
-                <p>Flex Flow</p>
-            </article>
-        </div>
-        <div class="exemplos">            
-            <div class="mini-container" id="ff">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>10</div>
+        <summary><h3>flex-flow</h3></summary>
+        <p>flex-flow nada mas é do que um aalho para você alterar o flex-direction, e o flex-wrap numa unica linha.</p>
+        <div class="mae">
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>Flex Flow</p>
+                        <p>Neste caso eu coloquei row-reverse e wrap-reverse, veja que bagunça(Com estas propriedades nos alteramos o sentido horizontal, e vertical).</p>
+                    </article>
+                    <div class="mini-container" id="ff">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                    </div>
+                </div>
             </div>
+        </div>
     </details>
     <details id="align-content">
-        <summary>align-content</summary>
-        <div class="exemplos">
-            <article>
-                <p>CENTER</p>
-            </article>
-            <article>
-                <p>FLEX-START</p>
-            </article>
-            <article>
-                <p>FLEX-END</p>
-            </article>
+        <summary><h3>align-content</h3></summary>
+        <p>align-content serve para alinhar o conteudo verticalmente na página.</p>
+        <div class="mae">
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>CENTER</p>
+                        <p>center alinha os elementos ao centro no eixo y</p>
+                    </article>
+                    <div class="mini-container" >
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>FLEX-START</p>
+                        <p>Esse coloca os elementos aonde começa o flex vertical</p>
+                    </article>
+                    <div class="mini-container" id="ac-FS">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>FLEX-END</p>
+                        <p>Esse coloca os elementos aonde começa o flex vertical</p>
+                    </article>
+                    <div class="mini-container" id="ac-FE">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="exemplos" id="ac-mg">            
-            <div class="mini-container" >
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+        <div class="mae">
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>SPACE-BETWEEN</p>
+                        <p>Esse alinha o 1° e o ulimo elemento as suas bordas mais proximas, e da um espaçameno por igual entre os elementos</p>
+                    </article>
+                    <div class="mini-container" id="ac-SB">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                    </div>
+                </div>
             </div>
-            <div class="mini-container" id="ac-FS">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>SPACE-AROUND</p>
+                        <p>space-around colocar margens em cada elemento, por exemplo cada cano de cada elemento tera 5px, assim para as bordas terão só 5 px de distancias, porem entre os elementos terão 10px</p>
+                    </article>
+                    <div class="mini-container" id="ac-SA">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                    </div>
+                </div>
             </div>
-            <div class="mini-container" id="ac-FE">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-            </div>
-        </div>
-        <div class="exemplos">
-            <article>
-                <p>SPACE-BETWEEN</p>
-            </article>
-            <article>
-                <p>SPACE-AROUND</p>
-            </article>
-            <article>
-                <p>SPACE-EVENLY</p>
-            </article>
-        </div>
-        <div class="exemplos">            
-            <div class="mini-container" id="ac-SB">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>10</div>
-            </div>
-            <div class="mini-container" id="ac-SA">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>10</div>
-            </div>
-            <div class="mini-container" id="ac-SE">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>10</div>
-            </div>
+            <div>
+                <div class="exemplos">
+                    <article>
+                        <p>SPACE-EVENLY</p>
+                        <p>space-evenly da o mesmo valor de espaçamento para todos os elementos, 5px de distancia das bordas, e 5px de elemento para elemento</p>
+                    </article>
+                    <div class="mini-container" id="ac-SE">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                    </div>
+                </div>
+            </div>  
         </div>
     </details>
